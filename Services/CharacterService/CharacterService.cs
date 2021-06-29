@@ -12,7 +12,8 @@ namespace dotnet_rpg.Services.CharacterService
     {
         private static List<Character> characters = new List<Character>{
             new Character(),
-            new Character { ID = 1, Name = "Sam"}
+            new Character { ID = 1, Name = "Sam"},
+            new Character { ID = 2, Name = "Gandalf"}
         };
 
         private readonly IMapper _mapper;
