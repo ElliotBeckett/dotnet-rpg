@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using dotnet_rpg.Controllers.DTOs.Skill;
+using dotnet_rpg.Controllers.DTOs.Weapon;
 using dotnet_rpg.Models;
 
 namespace dotnet_rpg.Controllers.DTOs.Character
@@ -11,5 +14,11 @@ namespace dotnet_rpg.Controllers.DTOs.Character
         public int Defence { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public RPGClass Class { get; set; } = RPGClass.Knight;
+        public GetWeaponDTO Weapon { get; set; }
+        public List<GetSkillDTO> Skills { get; set; }
+
+        public int Fights { get; set; }
+        public int Victories { get; set; }  
+        public int Defeats { get; set; }
     }
 }
