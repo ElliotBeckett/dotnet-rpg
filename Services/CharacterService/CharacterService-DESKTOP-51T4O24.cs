@@ -59,6 +59,7 @@ namespace dotnet_rpg.Services.CharacterService
             var dbCharacters = await _context.Characters.ToListAsync();
             serviceResponse.Data = characters.Select(c => _mapper.Map<GetCharacterDTO>(c)).ToList();
             return serviceResponse;
+            return cheese;
         }
 
         public async Task<ServiceResponse<GetCharacterDTO>> GetCharacterByID(int id)
